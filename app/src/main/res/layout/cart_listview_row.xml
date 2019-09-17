@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:elevation="10dp"
+    android:layout_height="match_parent">
+
+
+<ImageView
+    android:layout_width="130dp"
+    android:layout_height="133dp"
+    android:padding="2dp"
+    android:src="@drawable/shortcut_icon"
+    android:id="@+id/CartProductIv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CartCanBookTv"
+        android:visibility="invisible"
+        android:layout_toRightOf="@id/CartProductIv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CartProductIdTv"
+        android:visibility="invisible"
+        android:layout_toRightOf="@id/CartCanBookTv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CartProviderIdTv"
+        android:visibility="invisible"
+        android:layout_toRightOf="@id/CartProductIdTv"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Booking Time:- "
+        android:textStyle="italic"
+        android:textSize="12dp"
+        android:paddingLeft="4dp"
+        android:layout_gravity="right"
+        android:id="@+id/CartBookTimeTv"
+        android:layout_toRightOf="@+id/CartProductIv"
+        android:layout_below="@id/CartProviderIdTv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/CartProductIv"
+        android:text="Pizza"
+        android:layout_below="@id/CartBookTimeTv"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/CartProductNameTv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/CartProductIv"
+        android:text="Pizza"
+        android:layout_below="@id/CartProductNameTv"
+        android:textSize="13dp"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/CartProductDescriptionTv"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/CartProductIv"
+        android:layout_below="@id/CartProductDescriptionTv"
+        android:id="@+id/Lv"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="200Rs"
+            android:paddingTop="5dp"
+            android:drawableLeft="@drawable/ic_rupee"
+            android:textSize="15dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/CartPriceTv"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:layout_marginTop="2dp"
+            android:id="@+id/CartOldPriceTv"
+            android:layout_marginLeft="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CartPerDisTv"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="3dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:text="-"
+        style="?attr/borderlessButtonStyle"
+        android:background="@drawable/button_press"
+        android:id="@+id/CartQtyDecreaseBtn"
+        android:layout_toRightOf="@id/CartProductIv"
+        android:layout_below="@id/Lv"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_toRightOf="@id/CartQtyDecreaseBtn"
+        android:layout_below="@id/Lv"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:id="@+id/CartQtyTv"
+        android:text="1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"/>
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:text="+"
+        style="?attr/borderlessButtonStyle"
+        android:background="@drawable/button_press"
+        android:id="@+id/CartQtyIncreaseBtn"
+        android:layout_toRightOf="@id/CartQtyTv"
+        android:layout_below="@id/Lv"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="2dp"/>
+
+    <TextView
+        android:id="@+id/CartTotalPriceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="400Rs"
+        android:drawableLeft="@drawable/ic_rupee"
+        android:layout_toRightOf="@id/CartQtyIncreaseBtn"
+        android:layout_below="@id/Lv"
+        android:textSize="15dp"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"/>
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="X"
+        android:layout_toRightOf="@id/CartTotalPriceTv"
+        android:layout_below="@id/Lv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:id="@+id/CartRemoveBtn"
+        android:background="@drawable/remove_button_press"
+        android:textColor="#ffffff"
+        style="?attr/borderlessButtonStyle"
+        />
+
+</RelativeLayout>

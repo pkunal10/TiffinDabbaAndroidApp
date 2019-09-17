@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_bc">
+
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/ShortIconIv"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LoginTxtTv"
+        android:textSize="30dp"
+        android:layout_below="@+id/ShortIconIv"
+        android:text="Login Here"
+        android:textColor="#ffffff"
+        android:gravity="center"/>
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_below="@+id/LoginTxtTv"-->
+            <!--android:padding="10dp">-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/LoginTxtTv"
+
+                android:padding="20dp">
+                <!--android:background="@color/colorPrimaryDark"-->
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="Email Id"
+                android:textColorHint="#000000"
+                android:singleLine="true"
+                android:drawableRight="@drawable/ic_email_black_24dp"
+                android:background="@drawable/shape_et"
+                android:id="@+id/EmailIdEt"
+                android:padding="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textColorHint="#000000"
+                android:hint="Password"
+                android:singleLine="true"
+                android:background="@drawable/shape_et"
+                android:drawableRight="@drawable/ic_key"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"
+                android:layout_below="@+id/EmailIdEt"
+                android:id="@+id/PasswordEt"
+                android:padding="10dp"/>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Log in"
+                    android:textSize="17dp"
+                    android:id="@+id/LoginBtn"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    style="?attr/borderlessButtonStyle"
+                    android:textColor="#000000"
+                    android:background="@drawable/shape_btn"
+                    android:layout_below="@+id/PasswordEt"
+                    android:layout_marginTop="15dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/LoginBtn"
+                    android:text="Forget Password ??"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/ForgetTv"
+                    style="?attr/borderlessButtonStyle"
+                    />
+
+            </RelativeLayout>
+
+        <!--</android.support.v7.widget.CardView>-->
+
+</RelativeLayout>
+
+
+</ScrollView>

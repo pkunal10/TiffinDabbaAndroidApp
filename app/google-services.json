@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "942085804778",
+    "firebase_url": "https://tiffindabba-ddd79.firebaseio.com",
+    "project_id": "tiffindabba-ddd79",
+    "storage_bucket": "tiffindabba-ddd79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942085804778:android:3115cc6e336b191e",
+        "android_client_info": {
+          "package_name": "com.tiffin_dabba.admin.tiffindabba"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942085804778-aulh7qeeig84uoprct5vi845om5tbhjr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tiffin_dabba.admin.tiffindabba",
+            "certificate_hash": "61518f3ee8f5e529fd464a049aba097b336d5eac"
+          }
+        },
+        {
+          "client_id": "942085804778-tsn1ji8ig59s2g8al80iqoh20k5fuqrg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK168owrakNcVscUhMW0sIyfRNG3yCAOE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942085804778-tsn1ji8ig59s2g8al80iqoh20k5fuqrg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

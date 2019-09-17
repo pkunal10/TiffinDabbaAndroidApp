@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/OpMenuViewProfile"
+        android:title="View Profile"
+        app:showAsAction="never" />
+
+    <item
+        android:title="Log Out"
+        android:id="@+id/OpMenuLogOut"/>
+
+    <item
+        android:icon="@drawable/ic_shopping_cart_white_24dp"
+        android:title="Cart"
+        android:id="@+id/OpMenuCart"
+        app:showAsAction="always"
+        />
+
+    <!--<item-->
+        <!--android:id="@+id/badge"-->
+        <!--android:title="cart"-->
+        <!--android:actionLayout="@layout/badge_count"-->
+        <!--app:showAsAction="always">-->
+    <!--</item>-->
+
+</menu>

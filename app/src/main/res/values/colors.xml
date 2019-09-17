@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8a799c</color>
+    <color name="colorPrimaryDark">#62556f</color>
+    <color name="colorAccent">#4A148C</color>
+    <color name="colorLightBc">#928e24aa</color>
+    <color name="colorLightBlack">#AB47BC</color>
+    <color name="ButtonPressed">#FFCC80</color>
+    <color name="ButtonReleased">#FF9800</color>
+    <color name="RemoveButtonPressed">#ff8080</color>
+    <color name="RemoveButtonReleased">#ff0400</color>
+
+</resources>

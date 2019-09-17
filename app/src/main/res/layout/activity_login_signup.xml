@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/saladpasta"
+    tools:context="com.tiffin_dabba.admin.tiffindabba.LoginSignupActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/ActionBarLL">
+
+        <TextView
+            android:id="@+id/LoginTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Login"
+            android:gravity="center"
+            android:layout_marginTop="9dp"
+            android:layout_weight="1"
+            style="?attr/borderlessButtonStyle"
+            android:textColor="#ffffff"
+            android:textSize="17dp"/>
+
+
+        <TextView
+            android:id="@+id/SignupTv"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_marginTop="9dp"
+            android:layout_height="match_parent"
+            android:text="Sign up"
+            style="?attr/borderlessButtonStyle"
+            android:layout_weight="1"
+            android:textColor="#ffffff"
+            android:textSize="17dp"/>
+
+    </LinearLayout>
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/FragmentFl"
+            android:layout_below="@id/ActionBarLL">
+
+        </FrameLayout>
+
+
+
+</RelativeLayout>

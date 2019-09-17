@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        style="?attr/borderlessButtonStyle"
+        android:layout_marginTop="-11dp"
+        android:layout_marginRight="-31dp"
+        android:src="@drawable/ic_cancel_black_24dp"
+        android:id="@+id/ProfileEditCloseBtn"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Your "
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:id="@+id/ProfileEditPopupTitleTv"
+        android:textSize="17dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ProfileEditPopupValueEt"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/shape_et"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textSize="17dp"
+        android:id="@+id/ProfileEditPopupUpdateBtn"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:background="@drawable/shape_btn"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

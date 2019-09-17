@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        style="?attr/borderlessButtonStyle"
+        android:layout_marginTop="-11dp"
+        android:layout_marginRight="-31dp"
+        android:src="@drawable/ic_cancel_black_24dp"
+        android:id="@+id/CartPopUpCloseBtn"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delivery Address Details"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivery City:-"
+        android:paddingLeft="4dp"/>
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CartCitySpinner"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_btn"
+        ></Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:id="@+id/CartPopupDelAreaTv"
+        android:visibility="gone"
+        android:paddingLeft="4dp"
+        android:text="Delivery Area:-" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_btn"
+        android:id="@+id/CartAreaSpinner"></Spinner>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CartAddressEt"
+        android:layout_marginTop="5dp"
+        android:hint="Enter Delivery Address"
+        android:background="@drawable/shape_et"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Address"
+            android:paddingRight="5dp"
+            android:id="@+id/CartChangeAddressBtn"
+            style="?attr/borderlessButtonStyle"
+            android:textColor="#1523da"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Payment Mode:- COD"
+            android:gravity="right"
+            android:paddingRight="25dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="17dp"
+        android:id="@+id/CartSelectAddressBtn"
+        android:textStyle="bold"
+        style="?attr/borderlessButtonStyle"
+        android:textColor="#000000"
+        android:background="@drawable/shape_btn"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

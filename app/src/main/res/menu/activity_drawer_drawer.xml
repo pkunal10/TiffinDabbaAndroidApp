@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_FastFood"
+            android:icon="@drawable/cook_food"
+            android:title="Fast Food" />
+
+        <item
+            android:id="@+id/nav_TiffinBook"
+            android:icon="@drawable/cook_food"
+            android:title="Tiffin Book" />
+        <!--<item-->
+            <!--android:id="@+id/nav_slideshow"-->
+            <!--android:icon="@drawable/ic_menu_slideshow"-->
+            <!--android:title="Slideshow" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_manage"-->
+            <!--android:icon="@drawable/ic_menu_manage"-->
+            <!--android:title="Tools" />-->
+    </group>
+
+    <!--<item android:title="Tiffin Book">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_SimpleTiffin"-->
+                <!--android:icon="@drawable/tiffin"-->
+                <!--android:title="Simple Tiffin" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_TiffinWithSweet"-->
+                <!--android:icon="@drawable/tiffin"-->
+                <!--android:title="Tiffin With Sweet" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_MonthlyTiffin"-->
+                <!--android:icon="@drawable/tiffin"-->
+                <!--android:title="Monthly Tiffin" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_OrderHistory"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="Order History" />
+    </group>
+
+</menu>

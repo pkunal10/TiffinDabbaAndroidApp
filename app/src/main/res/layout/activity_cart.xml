@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ParentLo"
+    android:orientation="vertical"
+    tools:context="com.tiffin_dabba.admin.tiffindabba.CartActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/ResTv"
+        android:layout_below="@id/appbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EmptyCartLl"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginTop="140dp"
+        android:layout_below="@id/ResTv">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/emptycart"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:id="@+id/StartShopBtn"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_btn"
+            android:text="Start Shoping"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/EmptyCartLl"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dp"
+        android:id="@+id/CartLv"
+        android:layout_above="@+id/linearLayout"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CartFixedAddressTv"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Address"
+            android:textColor="#1523da"
+            android:visibility="gone"
+            android:layout_marginTop="3dp"
+            android:id="@+id/CartFixedChangeAddressBtn"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:id="@+id/DelChargeLl"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/CartFinalTotalTv"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:id="@+id/CartDelChargeTv"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/BtnLl">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/CartGrandTotalTv"
+                android:paddingLeft="50dp"
+                android:textColor="#000000"
+                style="?attr/borderlessButtonStyle" />
+
+            <Button android:id="@+id/CartCheckoutBtn"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Book Order"
+                android:visibility="gone"
+                style="?attr/borderlessButtonStyle"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:layout_marginTop="5dp"
+                />
+
+            <Button android:id="@+id/CartAddressBtn"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Add Address"
+                style="?attr/borderlessButtonStyle"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

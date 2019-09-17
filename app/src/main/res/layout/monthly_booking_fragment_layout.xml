@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/MbAlreadyBookPnl">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/MbEatingIv"
+            android:src="@drawable/eating_food_img"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_margin="12dp"
+            android:elevation="8dp"
+            android:id="@+id/MbAlreadyBookMsgTv" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/MbCanBookPnl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:text="Delivery City:-" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/MbCitySpinner"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/shape_btn"
+            ></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:id="@+id/MbDelAreaTv"
+            android:paddingLeft="4dp"
+            android:visibility="gone"
+            android:text="Delivery Area:-" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/shape_btn"
+            android:id="@+id/MbAreaSpinner"></Spinner>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MbTiffinDetailsPnl"
+        android:visibility="invisible"
+        android:layout_margin="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Of Mothly Tiffin"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/Menu_tv"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sabzi:- Any Sabzi"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/m_sabzi_tv"
+            android:layout_below="@+id/Menu_tv"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roti:- Regular (5 Pc.)"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/m_roti_tv"
+            android:layout_below="@+id/Menu_tv"
+            android:layout_toRightOf="@+id/m_sabzi_tv"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dal / Kadi"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/m_dal_tv"
+            android:layout_below="@+id/m_sabzi_tv"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chawal / Khichdi"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/m_chawal_tv"
+            android:layout_below="@+id/m_roti_tv"
+            android:layout_toRightOf="@+id/m_sabzi_tv"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other:- Salad / Pickle / Papad"
+            android:layout_below="@id/m_dal_tv"
+            android:layout_marginTop="15dp"
+            android:id="@+id/m_other_tv"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trial Tiffin Price:- 65 Rs."
+            android:textColor="#008000"
+            android:layout_below="@id/m_other_tv"
+            android:layout_marginTop="5dp"
+            android:id="@+id/m_trial_price_tv"
+            android:textSize="17dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly Tiffin Price:- 59 Rs."
+            android:textColor="#008000"
+            android:layout_below="@id/m_trial_price_tv"
+            android:layout_marginTop="5dp"
+            android:id="@+id/m_monthly_price_tv"
+            android:textSize="17dp"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/m_monthly_price_tv">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/MbMonthlyBookBtn"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:background="@drawable/shape_btn"
+            android:text="Monthly Book"
+            android:textStyle="bold"
+            android:textSize="15dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/MbTrialBookBtn"
+            android:textColor="#000000"
+            android:background="@drawable/shape_btn"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:text="Trial Book"
+            android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

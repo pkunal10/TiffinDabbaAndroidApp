@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        style="?attr/borderlessButtonStyle"
+        android:layout_marginTop="-11dp"
+        android:layout_marginRight="-31dp"
+        android:src="@drawable/ic_cancel_black_24dp"
+        android:id="@+id/MbMonthlyPopUpCloseBtn"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Monthly Booking Order Confirmation"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu Of Tiffin"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:id="@+id/Tv"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Sabji:- Any Sabzi" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Roti:- Regular (5 Pc.)" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Dal / Kadhi" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Chawal / Khichdi" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Other:- Salad / Pickle" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Price:- 59 Rs."
+            android:textColor="#388E3C" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MbMonthlyPopUpBookForSpinner"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/shape_btn"
+        ></Spinner>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MbMonthlyPopUpDaysSpinner"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/shape_btn"
+        ></Spinner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="13dp"
+            android:textColor="#000000"
+            android:text="Start Date:- "
+            android:id="@+id/MbMonthlyPopupSTDate"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="13dp"
+            android:textColor="#000000"
+            android:text="End Date:- "
+            android:id="@+id/MbMonthlyPopupEndDate"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MbMonthlyPopupAddressEt"
+        android:layout_marginTop="5dp"
+        android:hint="Enter Delivery Address"
+        android:enabled="false"
+        android:background="@drawable/shape_et"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Change Address"
+            android:paddingRight="5dp"
+            android:id="@+id/MbMonthlyPopupChangeAddressBtn"
+            style="?attr/borderlessButtonStyle"
+            android:textColor="#1523da"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Payment Mode:- COD"
+            android:paddingLeft="5dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Order"
+        android:textSize="17dp"
+        android:id="@+id/MbMonthlyPopupConfirmOrderBtn"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:background="@drawable/shape_btn"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>
